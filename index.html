@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+       
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+    <title>Contact Manager</title>
+    
+    <link  rel="stylesheet"  href="CSS/main.css">
+   
+</head>
+
+   <body>
+   
+    <header>
+    <h1>Contact Manager</h1>
+  </header>
+  <main>
+    <ul class="contacts">
+      <li class="contact">
+        <span class="delete"></span>
+        <h3>Luke Skywalker</h3>
+        <p class="email">luke.skywalker@jedi.org</p>
+        <p class="phone">613-321-8765</p>
+      </li>
+      <li class="contact">
+        <span class="delete"></span>
+        <h3>Han Solo</h3>
+        <p class="email">han.solo@falcon.com</p>
+        <p class="phone">613-727-4723</p>
+      </li>
+      <li class="contact">
+        <span class="delete"></span>
+        <h3>Kylo Ren</h3>
+        <p class="email">kylo.ren@firstorder.io</p>
+        <p class="phone">613-876-0002</p>
+      </li>
+      <li class="contact">
+        <span class="delete"></span>
+        <h3>Leia Organa</h3>
+        <p class="email">the.princess@resistance.org</p>
+        <p class="phone">613-842-0101</p>
+      </li>
+      <li class="contact">
+        <span class="delete"></span>
+        <h3>Finn</h3>
+        <p class="email">fn2187@firstorder.io</p>
+        <p class="phone">613-876-2187</p>
+      </li>
+      <li class="contact">
+        <span class="delete"></span>
+        <h3>Poe Dameron</h3>
+        <p class="email">poe.dameron@resistance.org</p>
+        <p class="phone">613-842-6363</p>
+      </li>
+    </ul>
+  </main>
+  <footer>
+    <div class="fab"></div>
+  </footer>
+  <div class="overlay" >&nbsp;</div>
+  <section class="contactform">
+      <form>
+          <input type="text" id ="input-name" placeholder="full name" required>
+          <input type="email" id ="input-email" placeholder="email" required>
+                    <input type="text" id ="input-phone" placeholder="phone number" required>
+                    <button id="button-cancel">cancel</button>
+                    <button data-id="0" id="button-save">Save contact</button>
+      </form>
+  </section>
+<!--
+    <section class="contactformedit">
+      <form>
+          <input type="text" id ="input-name" placeholder="full name" required>
+          <input type="email" id ="input-email" placeholder="email" required>
+                    <input type="text" id ="input-phone" placeholder="phone number" required>
+                    <button id="button-cancel">cancel</button>
+                    <button id="button-edit">Edit contact</button>
+      </form>
+  </section>
+-->
+  
+  <script src="./JS/starter.js"></script>
+    <script src="./JS/contact.js"></script>
+</body>
+  
+</html>
+
+
